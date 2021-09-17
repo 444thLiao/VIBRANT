@@ -8,6 +8,7 @@
 # Usage: see VIBRANT_run.py
 
 ############################### Imports  #######################################
+from db_setting import *
 import warnings
 warnings.filterwarnings("ignore")
 import sys
@@ -44,9 +45,9 @@ vibrant.add_argument('-y', type=str, nargs=1, help='base')
 ####### Create variables
 args = vibrant.parse_args()
 input = str(args.i[0])
-kegg_hmm = str(args.d[0]) + 'KEGG_profiles_prokaryotes.HMM'
-pfam_hmm = str(args.d[0]) + 'Pfam-A_v32.HMM'
-vog_hmm = str(args.d[0]) + 'VOGDB94_phage.HMM'
+kegg_hmm = kegg_db
+pfam_hmm = pfam_db
+vog_hmm = VOG_db
 virome = args.virome
 lim_low = int(args.l[0])
 orf_low = int(args.o[0])

@@ -113,15 +113,15 @@ elif os.path.exists(str(out_folder)):
 logging.basicConfig(filename=str(out_folder)+'VIBRANT_log_run_' + base + '.log', level=logging.INFO, format='%(message)s')
 
 try:
-	if not os.path.exists(databases + 'KEGG_profiles_prokaryotes.HMM.h3f'):
-		logging.info("VIBRANT error: could not identify KEGG HMM files in database directory. Please run VIBRANT_setup.py.")
-		exit()
-	if not os.path.exists(databases + 'Pfam-A_v32.HMM.h3f'):
-		logging.info("VIBRANT error: could not identify Pfam HMM files in database directory. Please run VIBRANT_setup.py.")
-		exit()
-	if not os.path.exists(databases + 'VOGDB94_phage.HMM.h3f'):
-		logging.info("VIBRANT error: could not identify VOG HMM files in database directory. Please run VIBRANT_setup.py.")
-		exit()
+	# if not os.path.exists(databases + 'KEGG_profiles_prokaryotes.HMM.h3f'):
+	# 	logging.info("VIBRANT error: could not identify KEGG HMM files in database directory. Please run VIBRANT_setup.py.")
+	# 	exit()
+	# if not os.path.exists(databases + 'Pfam-A_v32.HMM.h3f'):
+	# 	logging.info("VIBRANT error: could not identify Pfam HMM files in database directory. Please run VIBRANT_setup.py.")
+	# 	exit()
+	# if not os.path.exists(databases + 'VOGDB94_phage.HMM.h3f'):
+	# 	logging.info("VIBRANT error: could not identify VOG HMM files in database directory. Please run VIBRANT_setup.py.")
+	# 	exit()
 	if not os.path.exists(files + 'VIBRANT_categories.tsv'):
 		logging.info("VIBRANT error: could not identify VIBRANT_categories.tsv in files directory.")
 		exit()
