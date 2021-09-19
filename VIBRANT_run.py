@@ -414,10 +414,10 @@ try:
 	subprocess.Popen('rm '+str(out_folder)+'temp_VIBRANT_AMGs_*' + base + '* 2>/dev/null', shell=True)
 	subprocess.Popen('rm '+str(out_folder)+'temp_VIBRANT_genbank_table_*' + base + '* 2>/dev/null', shell=True)
 	subprocess.Popen('rm '+str(out_folder)+'temp_VIBRANT_genome_quality_' + base + '.tsv 2>/dev/null', shell=True)
-	subprocess.Popen(['mkdir -p', str(out_folder)+'VIBRANT_HMM_tables_unformatted_'+base])
-	subprocess.Popen(['mkdir -p', str(out_folder)+'VIBRANT_HMM_tables_parsed_'+base])
-	subprocess.Popen(['mkdir -p', str(out_folder)+'VIBRANT_phages_'+base])
-	subprocess.Popen(['mkdir -p', str(out_folder)+'VIBRANT_results_'+base])
+	subprocess.Popen(['mkdir -p ', str(out_folder)+'VIBRANT_HMM_tables_unformatted_'+base])
+	subprocess.Popen(['mkdir -p ', str(out_folder)+'VIBRANT_HMM_tables_parsed_'+base])
+	subprocess.Popen(['mkdir -p ', str(out_folder)+'VIBRANT_phages_'+base])
+	subprocess.Popen(['mkdir -p ', str(out_folder)+'VIBRANT_results_'+base])
 	kegg_cat = 'cat ' + str(out_folder)+base + '*KEGG.hmmtbl.parse.out 1> ' + str(out_folder)+base + '.KEGG_hmmtbl_parse.txt 2>/dev/null'
 	x1 = subprocess.Popen(kegg_cat, shell=True)
 	kegg_table = 'cat ' + str(out_folder)+base + '*KEGG.hmmtbl 1> ' + str(out_folder)+base + '_unformatted_KEGG.hmmtbl 2>/dev/null'
