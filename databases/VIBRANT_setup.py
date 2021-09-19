@@ -187,7 +187,6 @@ try:
     import numpy as np
     from collections import OrderedDict
     from sklearn import preprocessing
-    from sklearn.neural_network import MLPClassifier
     from sklearn.metrics import classification_report,confusion_matrix
     import pickle
     import os

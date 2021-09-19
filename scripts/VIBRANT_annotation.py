@@ -8,6 +8,9 @@
 # Usage: see VIBRANT_run.py
 
 ############################### Imports  #######################################
+import sys
+from os.path import *
+sys.path.insert(0,realpath(dirname(dirname(__file__))))
 from db_setting import *
 import warnings
 warnings.filterwarnings("ignore")
@@ -20,7 +23,6 @@ from collections import OrderedDict
 import math
 import numpy as np
 from sklearn import preprocessing
-from sklearn.neural_network import MLPClassifier
 from sklearn.metrics import classification_report,confusion_matrix
 import pickle
 import logging
